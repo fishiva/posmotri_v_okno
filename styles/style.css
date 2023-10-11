@@ -143,8 +143,13 @@ ol {
   text-decoration: none;
 }
 
+.content__card-link_current {
+  background-color: #545050;
+}
+
 .content__video-card {
-  justify-self: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
 
 .content__card-link:active {
@@ -200,8 +205,8 @@ ol {
 }
 
 .search-form__textfield {
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   border-right: none;
   border-left: none;
   inline-size: 225px;
@@ -225,10 +230,6 @@ ol {
 
 .search-form__textfield:active {
   outline: 1px solid #FFF;
-}
-
-.search-form__textfield:focus {
-  outline: none;
 }
 
 .search-form__textfield:focus {
@@ -264,12 +265,12 @@ ol {
 } 
 
 .search-form__label-text {
-color: #FFF;
-font-family: 'Fira Sans Condensed', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #FFF;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .button {
