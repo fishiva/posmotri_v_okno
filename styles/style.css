@@ -156,13 +156,9 @@ ol {
   outline: none;
 }
 
-.content__video-card:has(focuse-visible) {
+.content__video-card:has(:focus-visible) {
   outline: 1px solid #FFF; 
 } 
-
-/* .content__video-card-description-container {
-
-} */
 
 .content__video-card-title {
   padding-bottom: 5px;
@@ -195,7 +191,7 @@ ol {
   text-underline-offset: 5px;
 }
 
-.search-form__label:has(:focuse-visible) {
+.search-form__label:has(:focus-visible) {
   outline:1px solid #FFF; 
 }
 
@@ -276,9 +272,7 @@ line-height: normal;
   /*УДАЛИТЬ НЕНУЖНЫЕ СВОЙСТВА ШРИФТА */
   font-family: Fira Sans Condensed;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .button:active {
@@ -293,9 +287,9 @@ line-height: normal;
   outline: none;
 }
 
-.button:has(focus-outline) {
+.button:focus-visible {
   outline: 1px solid #FFF;
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
